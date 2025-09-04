@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Green Leaf Counseling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sage': '#4A5D3A',
+                        'sage-light': '#7A8B6B',
+                        'warm-bg': '#FAF7F2',
+                        'warm-white': '#FEFCF8'
+                    },
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warm-bg text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-warm-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="logo.jpg" alt="Green Leaf Counseling" class="h-20 w-auto">
+                    <div class="ml-3">
+                        <h1 class="text-lg font-medium text-sage">Green Leaf Counseling</h1>
+                        <p class="text-sm text-gray-600">Anna Boynton, LCSW</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-sage transition-colors">Home</a>
+                    <a href="services.html" class="text-sage font-medium border-b-2 border-sage pb-1">Services</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-sage transition-colors">About & Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-sage" onclick="toggleMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-sage">Home</a>
+                <a href="services.html" class="block py-2 text-sage font-medium">Services</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-sage">About & Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-serif text-sage mb-6">Therapeutic Services</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+                I have years of training and supervision in evidence-based therapies that have been proven effective for trauma, anxiety, depression, and other mental health challenges.
+            </p>
+        </div>
+    </section>
+
+    <!-- Therapy Services -->
+    <section class="py-8 px-4">
+        <div class="max-w-5xl mx-auto space-y-8">
+            
+            <!-- EMDR -->
+            <div class="bg-warm-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-serif text-sage mb-4">Eye Movement Desensitization and Reprocessing (EMDR)</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    This form of trauma therapy focuses on reprocessing traumatic memory, which helps us to feel less haunted by past experiences. This therapy is based on the insight that traumatic memory is stored differently in the brain than an everyday memory, and through eye movement and exposure to the memory via discussing it in a safe therapeutic setting, the memory can be reprocessed to feel less distressing and overwhelming.
+                </p>
+            </div>
+
+            <!-- IFS -->
+            <div class="bg-warm-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-serif text-sage mb-4">Internal Family Systems (IFS)</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    This therapy is based on the insight that we all have many parts of ourselves, and these parts may have different or conflicting needs. Think about the anxious voice that might sometimes motivate you, but might sometimes cause you to freeze up or overthink things you need to do. This kind of therapy helps us to better understand our parts and where they originated in our lives, creating empathy and understanding for the self, which can help us to change and find alternative behavior better suited to our needs in the present.
+                </p>
+            </div>
+
+            <!-- ERP -->
+            <div class="bg-warm-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-serif text-sage mb-4">Exposure and Response Prevention (ERP)</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    This therapy is considered the 'gold standard' for OCD treatment, and I have seen it make huge changes for my patients. This therapy helps people with OCD resist compulsive behaviors and feel less distressed by obsessive thoughts.
+                </p>
+            </div>
+
+            <!-- DBT -->
+            <div class="bg-warm-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-serif text-sage mb-4">Dialectical Behavioral Therapy (DBT)</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    This therapy focuses on helping us regulate overwhelming emotions. DBT blends mindfulness skills, communication skills, and some behavioral change to help people overcome patterns of feeling driven by emotions, and find balance in their relationships. This is the 'gold standard' treatment for people with diagnosis of borderline personality disorder, but I believe this therapy has something important to offer for almost everyone.
+                </p>
+            </div>
+
+            <!-- MBPR -->
+            <div class="bg-warm-white p-8 rounded-lg shadow-sm">
+                <h3 class="text-2xl font-serif text-sage mb-4">Mindfulness-Based Pain Relief (MBPR)</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    I am certified in using mindfulness skills for managing chronic pain. These treatments help us to find relief in the face of physical pain. I believe that the mind and body are deeply connected, and the stress of our lives often shows up physically, through pain, illness, or other symptoms. These techniques can provide us mental and physical relief from pain, and help address the stresses which can contribute to physical symptoms.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Specialization Areas -->
+    <section class="py-12 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-serif text-sage text-center mb-8">Who I Work With</h3>
+            <div class="bg-warm-white p-8 rounded-lg shadow-sm">
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-xl font-medium text-sage mb-3">Complex Trauma & C-PTSD</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            I specialize in working with people who have experienced lifelong trauma, sometimes known as complex trauma or C-PTSD. This can look like folks who grew up in chaotic and violent families, people who were sexually abused as children, or people who were physically punished, emotionally abused, or grew up in unsafe environments. I also work with people who survived traumatic experiences when they were older, including survivors of abusive relationships, sexual assault, medical trauma, or other exposure of violence or traumatic incidents.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-medium text-sage mb-3">OCD & Borderline Personality Disorder</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            I particularly enjoy working with people with Obsessive Compulsive Disorder, and people with a Borderline Personality Disorder diagnosis. I am trained in Exposure and Response Prevention for OCD, and in Dialectical Behavioral Therapy for BPD. I love using these treatments because they are practical and skill based, and I have seen them make a tremendous difference to my patients.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-medium text-sage mb-3">Additional Areas</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            In addition to these diagnoses I have experience working with people struggling with anxiety, depression, chronic illness and chronic pain, addiction and ADHD. I love working with a variety of diagnoses as I learn something new and valuable from each person I work with.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12 px-4">
+        <div class="max-w-3xl mx-auto text-center bg-sage text-white p-8 rounded-lg">
+            <h3 class="text-2xl font-serif mb-4">Ready to Get Started?</h3>
+            <p class="mb-6 text-sage-light">
+                If you'd like to see if we are a good fit, please reach out for a free consultation!
+            </p>
+            <a href="https://calendly.com/annabclinicalservices/30min" class="inline-block bg-white text-sage px-8 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors">
+                Book a Free Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sage text-white py-8 px-4 mt-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <h4 class="text-xl font-medium mb-2">Green Leaf Counseling</h4>
+            <p class="text-sage-light">Anna Boynton, LCSW</p>
+            <div class="mt-4 space-x-6">
+                <a href="index.html" class="text-sage-light hover:text-white transition-colors">Home</a>
+                <a href="services.html" class="text-sage-light hover:text-white transition-colors">Services</a>
+                <a href="contact.html" class="text-sage-light hover:text-white transition-colors">About & Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

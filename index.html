@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Leaf Counseling - Anna Boynton, LCSW</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sage': '#4A5D3A',
+                        'sage-light': '#7A8B6B',
+                        'warm-bg': '#FAF7F2',
+                        'warm-white': '#FEFCF8'
+                    },
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warm-bg text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-warm-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <img src="logo.jpg" alt="Green Leaf Counseling" class="h-20 w-auto">
+                    <div class="ml-3">
+                        <h1 class="text-lg font-medium text-sage">Green Leaf Counseling</h1>
+                        <p class="text-sm text-gray-600">Anna Boynton, LCSW</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-sage font-medium border-b-2 border-sage pb-1">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-sage transition-colors">Services</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-sage transition-colors">About & Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-sage" onclick="toggleMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-sage font-medium">Home</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-sage">Services</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-sage">About & Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-serif text-sage mb-8 text-center">
+                Ready to Heal and Find Your Way Forward?
+            </h2>
+            <div class="bg-warm-white p-8 rounded-lg shadow-sm">
+                <div class="flex flex-col lg:flex-row items-center gap-8">
+                    <div class="lg:w-1/3">
+                        <img src="portrait.jpg" alt="Anna Boynton, LCSW" class="w-full max-w-sm mx-auto rounded-lg shadow-sm">
+                    </div>
+                    <div class="lg:w-2/3">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Do you feel ready to heal from past experiences and find a new way forward? As a trauma focused therapist I seek to help my clients both understand how your past has impacted you, and find new pathways that bring you closer to your goals and values.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                            I believe everyone has the ability to heal, and I will be honored to be a part of your journey if you choose to work with me. If you are ready to learn new skills and to explore your story in a new way, I hope you will reach out!
+                        </p>
+                        <div class="text-center lg:text-left">
+                            <a href="https://calendly.com/annabclinicalservices/30min" class="inline-block bg-sage text-white px-8 py-3 rounded-md font-medium hover:bg-sage-light transition-colors">
+                                Book a Free Consultation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specializations -->
+    <section class="py-12 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-serif text-sage text-center mb-12">Areas of Specialization</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-warm-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-medium text-sage mb-4">Complex Trauma & C-PTSD</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        I specialize in working with people who have experienced lifelong trauma, sometimes known as complex trauma or C-PTSD. This can include those who grew up in chaotic environments, survivors of childhood abuse, or those who experienced traumatic events later in life.
+                    </p>
+                </div>
+                <div class="bg-warm-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-medium text-sage mb-4">OCD & BPD</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        I particularly enjoy working with people with Obsessive Compulsive Disorder and Borderline Personality Disorder. I am trained in Exposure and Response Prevention for OCD and Dialectical Behavioral Therapy for BPD.
+                    </p>
+                </div>
+                <div class="bg-warm-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-medium text-sage mb-4">Additional Areas</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        I also have experience working with anxiety, depression, chronic illness and chronic pain, addiction, and ADHD. I love working with a variety of diagnoses as I learn something new from each person I work with.
+                    </p>
+                </div>
+                <div class="bg-warm-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-medium text-sage mb-4">Evidence-Based Treatment</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        I use practical, skill-based treatments that have been proven effective. My approaches include EMDR, Internal Family Systems, ERP, DBT, and Mindfulness-Based Pain Relief.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-3xl mx-auto text-center bg-warm-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-serif text-sage mb-4">Ready to Begin Your Healing Journey?</h3>
+            <p class="text-gray-700 mb-6">
+                If you'd like to see if we are a good fit, please reach out for a free consultation!
+            </p>
+            <div class="space-y-3 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                <a href="https://calendly.com/annabclinicalservices/30min" class="inline-block bg-sage text-white px-6 py-2 rounded-md font-medium hover:bg-sage-light transition-colors">
+                    Book Free Consultation
+                </a>
+                <a href="services.html" class="inline-block border border-sage text-sage px-6 py-2 rounded-md font-medium hover:bg-sage hover:text-white transition-colors">
+                    Learn About Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sage text-white py-8 px-4 mt-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <h4 class="text-xl font-medium mb-2">Green Leaf Counseling</h4>
+            <p class="text-sage-light">Anna Boynton, LCSW</p>
+            <div class="mt-4 space-x-6">
+                <a href="index.html" class="text-sage-light hover:text-white transition-colors">Home</a>
+                <a href="services.html" class="text-sage-light hover:text-white transition-colors">Services</a>
+                <a href="contact.html" class="text-sage-light hover:text-white transition-colors">About & Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
