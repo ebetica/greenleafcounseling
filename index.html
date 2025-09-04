@@ -13,7 +13,7 @@
                         'sage': '#4A5D3A',
                         'sage-light': '#7A8B6B',
                         'warm-bg': '#FAF7F2',
-                        'warm-white': '#FEFCF8'
+                        'warm-white': '#f8f8f0'
                     },
                     fontFamily: {
                         'serif': ['Georgia', 'serif'],
@@ -28,17 +28,19 @@
     <nav class="bg-warm-white shadow-sm">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <img src="logo.jpg" alt="Green Leaf Counseling" class="h-20 w-auto">
-                    <div class="ml-3">
-                        <h1 class="text-lg font-medium text-sage">Green Leaf Counseling</h1>
-                        <p class="text-sm text-gray-600">Anna Boynton, LCSW</p>
+                <a href="index.html" class="flex items-center hover:opacity-90 transition-opacity">
+                    <img src="logo2.jpg" alt="Green Leaf Counseling" class="h-20 w-auto">
+                    <div class="ml-4">
+                        <h1 class="text-2xl font-medium text-sage leading-tight">
+                            <span class="block">Green Leaf</span>
+                            <span class="block">Counseling</span>
+                        </h1>
                     </div>
-                </div>
+                </a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-sage font-medium border-b-2 border-sage pb-1">Home</a>
-                    <a href="services.html" class="text-gray-700 hover:text-sage transition-colors">Services</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-sage transition-colors">About & Contact</a>
+                    <a href="index.html" class="text-lg text-sage font-medium border-b-2 border-sage pb-1">Home</a>
+                    <a href="services.html" class="text-lg text-gray-700 hover:text-sage transition-colors">Services</a>
+                    <a href="contact.html" class="text-lg text-gray-700 hover:text-sage transition-colors">About & Contact</a>
                 </div>
                 <div class="md:hidden">
                     <button class="text-sage" onclick="toggleMenu()">
