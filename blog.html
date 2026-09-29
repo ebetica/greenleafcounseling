@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog from Green Leaf Counseling NYC – Anna Boynton, LCSW. Reflections and practical tools on trauma healing, anxiety, OCD, BPD, and mindfulness.">
+    <title>Blog | Green Leaf Counseling NYC – Anna Boynton, LCSW</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sage': '#44643A',
+                        'sage-light': '#7A8B6B',
+                        'warm-bg': '#FAF7F2',
+                        'warm-white': '#f8f8f0'
+                    },
+                    fontFamily: {
+                        'serif': ['Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-warm-bg text-gray-800 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-warm-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="flex items-center hover:opacity-90 transition-opacity">
+                    <img src="logo2.jpg" alt="Anna Boynton, LCSW" class="h-20 w-auto">
+                    <div class="ml-4">
+                        <h1 class="text-2xl font-medium text-sage leading-tight">
+                            <span class="block">Anna Boynton</span>
+                            <span class="block">LCSW</span>
+                        </h1>
+                    </div>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-lg text-gray-700 hover:text-sage transition-colors">Home</a>
+                    <a href="services.html" class="text-lg text-gray-700 hover:text-sage transition-colors">Services</a>
+                    <a href="groups.html" class="text-lg text-gray-700 hover:text-sage transition-colors">Groups</a>
+                    <a href="blog.html" class="text-lg text-sage font-medium border-b-2 border-sage pb-1">Blog</a>
+                    <a href="contact.html" class="text-lg text-gray-700 hover:text-sage transition-colors">About & Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-sage" onclick="toggleMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-sage">Home</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-sage">Services</a>
+                <a href="groups.html" class="block py-2 text-gray-700 hover:text-sage">Groups</a>
+                <a href="blog.html" class="block py-2 text-sage font-medium">Blog</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-sage">About & Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Index -->
+    <section class="py-16 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-sans text-sage mb-4 text-center">Blog</h2>
+            <p class="text-lg text-gray-700 leading-relaxed text-center mb-12">
+                Reflections, psychoeducation, and practical tools for healing — from my practice to your everyday life.
+            </p>
+
+            <!-- To add a new post: copy an <article> block below, paste it directly under this comment (newest first), then update the date, title, excerpt, and link to the new page in the blog/ folder. -->
+            <article class="bg-warm-white p-8 rounded-lg shadow-sm mb-8">
+                <p class="text-sm font-medium text-sage-light mb-2">September 29, 2026</p>
+                <h3 class="text-2xl font-sans text-sage mb-4">Welcome to the Green Leaf Blog</h3>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    I'm starting this blog as a place to share reflections, practical coping tools, and bite-sized psychoeducation on the topics I work with every day — complex trauma and C-PTSD, OCD, BPD, anxiety, and chronic pain. Whether you're a current client, a future one, or simply curious, I hope you'll find something useful here.
+                </p>
+                <a href="blog/welcome.html" class="inline-block border border-sage text-sage px-6 py-2 rounded-md font-medium hover:bg-sage hover:text-white transition-colors">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-3xl mx-auto text-center bg-warm-white p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-sans text-sage mb-4">Ready to Begin Your Healing Journey?</h3>
+            <p class="text-gray-700 mb-6">
+                If you'd like to see if we are a good fit, please reach out for a free consultation!
+            </p>
+            <div class="space-y-3 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+                <a href="https://calendly.com/annabclinicalservices/30min" class="inline-block bg-sage text-white px-6 py-2 rounded-md font-medium hover:bg-sage-light transition-colors">
+                    Book Free Consultation
+                </a>
+                <a href="services.html" class="inline-block border border-sage text-sage px-6 py-2 rounded-md font-medium hover:bg-sage hover:text-white transition-colors">
+                    Learn About Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sage text-white py-6 px-4 mt-16">
+        <div class="max-w-6xl mx-auto flex justify-between items-end">
+            <!-- Professional verification provided by Psychology Today -->
+            <div>
+                <a href="https://www.psychologytoday.com/profile/1491390" class="sx-verified-seal"></a>
+                <script type="text/javascript" src="https://member.psychologytoday.com/verified-seal.js" data-badge="16" data-id="1491390" data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy8xNi9wcm9maWxlLzE0OTEzOTA/Y2FsbGJhY2s9c3hjYWxsYmFjaw=="></script>
+            </div>
+            <!-- End Verification -->
+
+            <div class="text-sm text-right">
+                <p>Anna Boynton, LCSW</p>
+                <p>New York, NY</p>
+                <p><a href="tel:8452568070" class="hover:text-sage-light transition-colors">845 256 8070</a></p>
+                <p><a href="mailto:annab@greenleafcounselingnyc.com" class="hover:text-sage-light transition-colors">annab@greenleafcounselingnyc.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
